@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package test;
+
+message Request { int32 id = 1; }
+message Response { int32 id = 1; }
+service MyService {
+  rpc DoStuff( Request ) returns( Response );
+}
